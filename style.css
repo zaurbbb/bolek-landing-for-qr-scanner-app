@@ -244,7 +244,7 @@ body {
 /*CODE FOR HOW TO USE*/
 @media {
     #howToUseBlock {
-        height: 40vh;
+        height: 30vh;
         background: #6900FF;
         display: flex;
         align-items: center;
@@ -302,12 +302,13 @@ body {
 /*CODE FOR OUR PARTNERS BLOCK*/
 @media{
     #ourPartnersBlock {
-        height: 50vh;
+        height: 40vh;
         background: #cb4c5f;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
+        padding-top: 20px;
     }
     #ourPartnersBlock div{
 
@@ -330,6 +331,10 @@ body {
         color: #f1f1f1;
         display: inline-block;
         margin: 0 20px;
+        transition: all .2s;
+    }
+    .personsCard:hover {
+        transform: scale(1.1);
     }
     .personsAva img{
         width: 250px;
