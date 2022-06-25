@@ -144,7 +144,6 @@ body {
 /*CODE FOR DOWNLOAD MOBILE APP BLOCK*/
 @media {
     #downloadModileAppBlock{
-        background: #cb4c5f;
         border: none;
     }
 
@@ -245,7 +244,6 @@ body {
 @media {
     #howToUseBlock {
         height: 30vh;
-        background: #6900FF;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -303,7 +301,6 @@ body {
 @media{
     #ourPartnersBlock {
         height: 40vh;
-        background: #cb4c5f;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -375,12 +372,12 @@ body {
     li a {
         color: white;
         text-decoration: none;
-        box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
-
+        border: none;
+        border-bottom: 1px solid white;
     }
 
     li a:hover {
-        box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+
     }
 
     li:last-child {
@@ -399,7 +396,7 @@ body {
         display: flex;
         height: 10vh;
         width: 100%;
-        background-color: #002a38;
+        background-color: #7f00ff ;
         line-height: 1.3;
         font-family: Menlo, monospace;
 
@@ -444,7 +441,7 @@ body {
 }
 
 .bgDark{
-    background-color: #6900FF;
+    background-color: #7f00ff ;
     transition: all .5s;
 }
 
