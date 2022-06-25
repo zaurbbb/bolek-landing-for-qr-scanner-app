@@ -293,11 +293,11 @@ body {
 /*CODE FOR HOW TO USE [HOVER]*/
 @media{
     .howToUseInside i{
-        transform: scale(5);
+        transform: rotate(0deg) scale(5);
         transition: all .2s
     }
     .howToUseInside:hover i{
-        transform: rotate(90deg) scale(5);
+        transform: rotate(20deg) scale(5);
     }
 }
 
@@ -375,6 +375,32 @@ body {
         color: white;
         font-family: 'Montserrat', sans-serif;
         width: 400px;
+    }
+    #advantagesOfApp .row .col img{
+        margin:  20px 40px;
+        width: 100px;
+        filter: brightness(300%);
+        transition: all .6s
+    }
+    #advantagesOfApp .row .col img:hover{
+        transform: rotate(360deg);
+    }
+    h2{
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/*CODE FOR ADVANTAGES OF APP[MOBILE]*/
+@media (max-width: 1000px){
+    #advantagesOfApp .row .col p{
+        margin:  20px 10px;
+        text-align: left;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        width: 750px;
     }
     #advantagesOfApp .row .col img{
         margin:  20px 40px;
