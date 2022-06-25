@@ -15,7 +15,6 @@
 /*GENERAL STYLES*/
 body {
     margin: 0;
-    height: 1000vh;
     font-family: Arial, sans-serif;
 }
 
@@ -107,6 +106,7 @@ body {
     main .row .col-6:nth-child(1) p {
         margin: 0;
         text-align: center;
+        color: white;
     }
 
     main .row .col-6:nth-child(2) {
@@ -300,7 +300,7 @@ body {
 /*CODE FOR OUR PARTNERS BLOCK*/
 @media{
     #ourPartnersBlock {
-        height: 40vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -316,7 +316,7 @@ body {
 /*CODE FOR OUR PARTNERS BLOCK [MOBILE]*/
 @media (max-height: 1000px){
     #ourPartnersBlock {
-        height: 45vh;
+        height: 55vh;
     }
 }
 
@@ -331,7 +331,7 @@ body {
         transition: all .2s;
     }
     .personsCard:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
     .personsAva img{
         width: 250px;
@@ -352,69 +352,87 @@ body {
 
 /*CODE FOR FOOTER  */
 @media{
-    ul {
-        display: inline-grid;
-        grid-auto-flow: row;
-        grid-gap: 24px;
-        justify-items: center;
-        margin: auto;
-        list-style-type: none;
-        transform: scale(2);
-        padding-top: 15px;
+    ul{
+        list-style: none;
+        padding: 0;
     }
-
-    @media (min-width: 500px) {
-        ul {
-            grid-auto-flow: column;
-        }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+        color: #bbbbbb;
     }
-
-    li a {
-        color: white;
+    .footer-col:nth-child(1){
+        width: 60%;
+        margin-right: 70px;
+    }
+    .footer-col{
+        width: 15%;
+        padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-links{
+        font-size: 16px;
+        text-transform: capitalize;
         text-decoration: none;
-        border: none;
-        border-bottom: 1px solid white;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-links:hover{
+        color: #ffffff;
+        padding-left: 8px;
+        cursor: pointer;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
     }
 
-    li a:hover {
-
-    }
-
-    li:last-child {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-
-    }
-
-    li:hover ~ li p {
-        animation: wave-animation 0.3s infinite;
-    }
-
-    /* below is just for demo styling */
-
-    footer {
-        display: flex;
-        height: 10vh;
-        width: 100%;
-        background-color: #7f00ff ;
-        line-height: 1.3;
-        font-family: Menlo, monospace;
-
-    }
-
-    @keyframes wave-animation {
-        0%,
-        100% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(20deg);
-        }
-        75% {
-            transform: rotate(-15deg);
+    /*responsive*/
+    @media(max-width: 767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
         }
     }
-
+    @media(max-width: 574px) {
+        .footer-col {
+            width: 100%;
+        }
+    }
 }
 
 /*CODE FOR SCROLLBAR*/
