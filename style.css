@@ -1,0 +1,378 @@
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* CODE FOR ADAPTIVITY*/
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/*GENERAL STYLES*/
+body {
+    margin: 0;
+    height: 1000vh;
+    font-family: Arial, sans-serif;
+}
+
+/*CODE FOR HEADER*/
+@media {
+    header {
+        transition: all .5s;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 4px 10px;
+        position: fixed;
+        width: 100%;
+        /*background: -webkit-linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        /*background: -moz-linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        /*background: linear-gradient(315deg, rgb(105, 0, 255), rgb(255, 0, 225) 100%);*/
+        background: transparent;
+    }
+
+    .wrap-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    header a {
+        color: #212121;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 10px;
+        margin: 0 10px;
+    }
+
+    header a.logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+
+    .header_links{
+        color: white;
+        transition: all .2s;
+    }
+
+    .header_links:hover {
+        background-color: white;
+        color: #212121;
+    }
+
+    .header_links:target {
+        background-color: white;
+        color: black;
+    }
+
+    .header_links:target {
+        color: red;
+    }
+
+    .header_links.active {
+        color: black;
+        background-color: white;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*CODE FOR ABOUT APP BLOCK*/
+@media {
+    #aboutAppBlock {
+        height: 100vh;
+        background-image: url("images/aboutAppBlock/backgroundImage.png");
+        object-fit: cover;
+        background-size: 100%;
+    }
+
+    main .row .col-6:nth-child(1) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    main .row .col-6:nth-child(1) p {
+        margin: 0;
+        text-align: center;
+    }
+
+    main .row .col-6:nth-child(2) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    main .row .col-6:nth-child(2) img {
+        margin-top: 75px;
+        width: 100%;
+    }
+}
+
+/*CODE FOR ABOUT APP BLOCK [MOBILE]*/
+@media (max-width: 1000px){
+    #aboutAppBlock {
+        height: 80vh;
+        background-image: url("images/aboutAppBlock/backgroundImageVertical.png");
+    }
+    main .row .col-6:nth-child(1) {
+
+        height: 30vh;
+    }
+    main .row .col-6:nth-child(2) {
+        height: 40vh;
+    }
+    main .row .col-6:nth-child(2) img{
+        width: 80%;
+    }
+}
+
+/*CODE FOR DOWNLOAD MOBILE APP BLOCK*/
+@media {
+    #downloadModileAppBlock{
+        background: #cb4c5f;
+        border: none;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(1) img{
+        width: 40%;
+        text-align: center;
+        margin: 0 50px;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(2){
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(2) p{
+        margin: 0;
+        text-align: center;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(2) div span{
+        font-weight: 800;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 29px;
+        margin-bottom: 50px;
+    }
+}
+
+/*CODE FOR DOWNLOAD MOBILE APP BLOCK [MOBILE]*/
+@media (max-width: 1000px) {
+    #downloadModileAppBlock{
+        object-fit: cover;
+        background-size: 100%;
+        padding: 20px;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(1){
+        width: 400px;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(2){
+        width: 300px;
+    }
+
+    #downloadModileAppBlock .row .col-6:nth-child(2) div span{
+        font-size: 22px;
+    }
+}
+
+/* CODE FOR CARD*/
+@media {
+    #modileAppCard{
+        margin-top: 10px;
+        width: 350px;
+        height: 100px;
+        border: 1px solid white;
+        border-radius: 10px;
+        transition: all .3s;
+    }
+
+    #mobileAppCardImage{
+        width: 100px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    #modileAppCardText{
+        width: 250px;
+        padding: 10px;
+    }
+
+    #modileAppCardText p:nth-child(1){
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+
+    #modileAppCardText p:nth-child(2){
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 40px;
+    }
+}
+
+/* CODE FOR CARD [HOVER]*/
+@media {
+    #modileAppCard:hover{
+        border: 1px solid #851f6f;
+        background: white;
+        transition: background-color .3s;
+    }
+
+    #modileAppCard:hover #modileAppCardText{
+        color: #851f6f;
+    }
+}
+
+/*CODE FOR HOW TO USE*/
+@media {
+    #howToUseBlock {
+        height: 40vh;
+        background: #6900FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    #howToUseBlock div{
+        margin: 0;
+        text-align: center;
+    }
+    .howToUseCard{
+        display: inline-block;
+    }
+    .howToUseCard p{
+        margin: 20px 0;
+    }
+    .howToUseIcon{
+        background: url("images/howToUse/arrow.png");
+        background-size: cover;
+        width: 265px;
+        height: 150px;
+        display:inline-block;
+        padding-top: 63px;
+        padding-left: 10px;
+    }
+    .howToUseInside i{
+        transform: scale(5);
+    }
+}
+
+/*CODE FOR HOW TO USE [MOBILE]*/
+@media (max-width: 1000px){
+    #howToUseBlock {
+        height: 25vh;
+    }
+    .howToUseCard{
+        margin: 30px 0;
+    }
+    .howToUseCard p{
+        margin: 10px 0;
+    }
+}
+
+/*CODE FOR HOW TO USE [HOVER]*/
+@media{
+    .howToUseInside i{
+        transform: scale(5);
+        transition: all .2s
+    }
+    .howToUseInside:hover i{
+        transform: rotate(90deg) scale(5);
+    }
+}
+
+/*CODE FOR OUR PARTNERS BLOCK*/
+@media{
+    #ourPartnersBlock {
+        height: 50vh;
+        background: #cb4c5f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    #ourPartnersBlock div{
+
+        text-align: center;
+    }
+}
+
+/*CODE FOR OUR PARTNERS BLOCK [HOVER]*/
+@media (max-height: 1000px){
+    #ourPartnersBlock {
+        height: 10vh;
+    }
+}
+
+/*CODE FOR PERSON'S CARD*/
+@media{
+    .personsCard {
+        height: 380px;
+        width: 250px;
+        color: #f1f1f1;
+        display: inline-block;
+        margin: 0 20px;
+    }
+    .personsAva img{
+        width: 250px;
+        height: 300px;
+        background-size: 100%;
+    }
+    .personsText span:nth-child(1){
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .personsText span:nth-child(2){
+        font-family: 'Varela Round', sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+/*CODE FOR SCROLLBAR*/
+@media {
+    ::-webkit-scrollbar {
+        opacity: 0.5;
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track{
+        opacity: 0.5;
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #C0C0C0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        opacity: 1;
+        background: rgb(105, 0, 255);
+    }
+
+}
+
+.bgDark{
+    background-color: #6900FF;
+    transition: all .5s;
+}
+
