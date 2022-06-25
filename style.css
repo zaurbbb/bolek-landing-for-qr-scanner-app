@@ -354,6 +354,45 @@ body {
     }
 }
 
+/*CODE FOR ADVANTAGES OF APP*/
+@media {
+    #advantagesOfApp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #advantagesOfApp div{
+        text-align: center;
+    }
+    #advantagesOfApp .row .col{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #advantagesOfApp .row .col p{
+        margin:  20px 10px;
+        text-align: left;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        width: 400px;
+    }
+    #advantagesOfApp .row .col img{
+        margin:  20px 40px;
+        width: 100px;
+        filter: brightness(300%);
+        transition: all .6s
+    }
+    #advantagesOfApp .row .col img:hover{
+        transform: rotate(360deg);
+    }
+    h2{
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
 /*CODE FOR FOOTER  */
 @media{
     ul{
