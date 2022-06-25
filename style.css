@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* CODE FOR ADAPTIVITY*/
 @media only screen and (max-width: 1200px) {
@@ -248,6 +249,7 @@ body {
         align-items: center;
         justify-content: center;
         color: white;
+        padding-top: 50px;
     }
     #howToUseBlock div{
         margin: 0;
@@ -255,10 +257,15 @@ body {
     }
     .howToUseCard{
         display: inline-block;
+        margin-right: 40px!important;
     }
     .howToUseCard p{
         margin: 20px 0;
+        font-family: 'Montserrat', sans-serif;
+
+        font-size: 20px;
     }
+
     .howToUseIcon{
         background: url("images/howToUse/arrow.png");
         background-size: cover;
@@ -277,9 +284,6 @@ body {
 @media (max-width: 1000px){
     #howToUseBlock {
         height: 25vh;
-    }
-    .howToUseCard{
-        margin: 30px 0;
     }
     .howToUseCard p{
         margin: 10px 0;
@@ -327,7 +331,7 @@ body {
         width: 250px;
         color: #f1f1f1;
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 30px;
         transition: all .2s;
     }
     .personsCard:hover {
