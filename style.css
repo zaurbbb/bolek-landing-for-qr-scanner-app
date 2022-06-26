@@ -283,6 +283,7 @@ body {
     }
     #advantagesOfApp .row {
         margin-top: 10px;
+        margin-bottom: 30px;
     }
     #advantagesOfApp .row .col{
         display: flex;
