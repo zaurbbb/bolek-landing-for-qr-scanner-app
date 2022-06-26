@@ -88,6 +88,12 @@ body {
         align-items: center;
     }
 }
+@media (max-width: 1000px) {
+    header {
+         background: #7f00ff ;
+    }
+
+}
 
 /*CODE FOR ABOUT APP BLOCK*/
 @media {
