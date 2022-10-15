@@ -14,3 +14,5 @@ Live demo of landing page: https://zaurbbb.github.io/bolek-landing-hackathon/
 HTML5 and CSS3 were used for layout. JavaScript and JQuery for some animations. I 
 
 *The technical task was provided by [Terricon Valley](https://terricon.kz/ru/), during [Fintech Hackathon](https://terricon.kz/tpost/j0pfz49jj1-obyavlyaem-rezultati-fintech-hackathon).*
+
+*Project by 13Lab.*
